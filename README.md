@@ -8,6 +8,10 @@
 혹시 생길지 모를 저작권 싸움에서 입증할 수 있는 증거로 사용하도록 만들고 싶어 개발을 시작했습니다.
 
 # 개발환경
+UI : 안드로이드
+Database: Firebase
+외부 API : Kakao Klaytn API
+
 ![image](https://github.com/Chaeros/NFTStagram/assets/91451735/d40b1209-af7f-4f35-bb54-a8e0184df265)
 
 ![image](https://github.com/Chaeros/NFTStagram/assets/91451735/f2023b1e-3421-4286-99aa-db1755555735)
