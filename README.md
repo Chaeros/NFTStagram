@@ -1,53 +1,66 @@
 # NFTStagram
 블록체인 기반 SNS 애플리케이션
+<br>
 
-# 개발동기
-개인과 기업 간의 저작권 싸움이 발생하면, 최초 소유권자가 개인일지라도 <br>
-이를 증명하기가 어렵다는 기사를 접했습니다.<br>
-이를 삭제, 수정이 불가능한 블록체인 기술을 활용하여 개인의 저작권 소유권을 강화하고자<br>
-SNS 형태의 블록체인 애플리케이션을 개발했습니다.<br>
-사용자가 사진 또는 게시글을 NFT로 만들어 블록체인 네트워크에 저장하여<br>
-혹시 생길지 모를 저작권 싸움에서 입증할 수 있는 증거로 사용하도록 만들고 싶어 개발을 시작했습니다.<br>
+# 서비스 설명
+삭제, 수정이 불가능한 블록체인 기술을 활용하여 개인의 저작권 소유권을 강화하고자<br>
+SNS 형태의 블록체인 애플리케이션을 개발했습니다.<br><br>
+사용자가 사진 또는 게시글을 업로드하면, <br>
+이를 NFT로 만들어 블록체인 네트워크에 저장하고 사용자간 거래할 수 있도록 했습니다.<br>
 
 # 팀 구성 및 역할
-![image](https://github.com/Chaeros/NFTStagram/assets/91451735/80010b76-e100-4de6-a4b8-6350d84d0357)
+<img src="https://github.com/Chaeros/NFTStagram/assets/91451735/80010b76-e100-4de6-a4b8-6350d84d0357" width="600px">
 
+<br>
 
 # 개발환경
 UI : 안드로이드<br>
 Database: Firebase<br>
 외부 API : Kakao Klaytn API<br>
+<img src="https://github.com/Chaeros/NFTStagram/assets/91451735/d40b1209-af7f-4f35-bb54-a8e0184df265" width="600px">
 
-![image](https://github.com/Chaeros/NFTStagram/assets/91451735/d40b1209-af7f-4f35-bb54-a8e0184df265)
+<img src="https://github.com/Chaeros/NFTStagram/assets/91451735/f2023b1e-3421-4286-99aa-db1755555735" width="600px">
 
-![image](https://github.com/Chaeros/NFTStagram/assets/91451735/f2023b1e-3421-4286-99aa-db1755555735)
+<br>
 
-# 기능
-- 개인키를 사용한 로그인 기능(Klaytn 네트워크로부터 할당받은 암호화키)
-- 전자지갑 생성
-- 입장권(회원권 NFT 발행)
-  - 특정 인물 또는 조직에서 개장한 갤러리를 방문하기 위해서 소유가 필요한 NFT이다.
-  - 갤러리 생성과정에서 발행 여부를 선택할 수 있다. 
-  - 발행하면 사용자들은 해당 갤러리에 일정금액을 
-  - 지불하여 입장권 NFT를 구매하고 갤러리를 볼 수 있다.
+# 기능 페이지
 
-- 갤러리 기능(발행된 NFT 입장권을 소유해야만 입장할 수 있도록 구현)
-  - 자신의 계정 내에서 자신만의 갤러리 (온라인 전시회)를 개장할 수 있다.
-  - 해당 갤러리에 들어가기 위해서는 NFT로 만들어진 입장권이 필요할 수도 있다.
--  자체 토큰 발행
-  - 클레이로 NFT거래를 진행하면 일정 비율 만큼 자체 토큰을 얻을 수 있다.
-  - 얻은 자체 토큰으로 클레이 대신 NFT 거래를 진행할 수 있다.
+### 1. 로그인 및 회원가입
+<img src="https://github.com/user-attachments/assets/ac413c6e-3d03-4fe0-aff6-8680e539313f" width="230px">
+<br>
 
-- 게시물 작성으로 NFT 생성
-  - SNS에 게시물을 게시하면 해당 사진 및 설명이 바이트 코드로 변환되고,
-  이를 블록 체인에 올림으로써 토큰을 생성한다.
-  - 토큰으로 만들고 블록 체인에 넣기 싫은 경우에는 토글버튼으로 토큰화 여부를 선택할 수 있다.
+- 회원가입을 통해 개인키 및 전자지갑 생성이 가능합니다.(Kakao Klaytn 네트워크로부터 발급받습니다)
+- 발급받은 개인키를 통해 로그인이 가능합니다.
+<br><br>
 
-- NFT 마켓 기능
-  - 이용자들이 게시물을 서로 사고 팔 수 있는 마켓 기능을 제공(자체 발행한 암호화폐로 거래)
+### 2. NFT 입장권 거래 및 갤러리 입장
+<img src="https://github.com/user-attachments/assets/addf6a09-c270-4d0b-8a2e-cca4a67c6141" width="230px">
+<img src="https://github.com/user-attachments/assets/979e32f7-161e-416c-a4fd-71497f5e7df6" width="230px">
+<img src="https://github.com/user-attachments/assets/cc4ba853-c518-4c90-9b3e-c4d751884851" width="230px">
 
-- 팔로우, 댓글 등 SNS 기본 기능 제공
-  - 특정 게시물에 대한 의견을 나누기 위해 제공
+<br>
+
+- 앱에서 자체 발행된 암호화폐를 통해 NFT 티켓을 구매할 수 있습니다.
+- NFT 입장권을 구매해야 갤러리에 입장할 수 있습니다.
+
+<br>
+
+### 3. 게시물 작성을 통한 NFT 토큰 발행 
+<img src="https://github.com/user-attachments/assets/55fd6b50-54ad-4de9-80e8-6be6b561682e" width="230px">
+<img src="https://github.com/user-attachments/assets/ca869a92-d39b-4014-b212-51cc890327e0" width="230px">
+<br>
+
+- 게시물 작성으로 NFT 토큰 생성이 가능합니다.
+- 블록체인 네트워크에서 상세 내용을 확인할 수 있습니다.
+- 게시글에 댓글을 달 수 있습니다.
+<br>
+
+### 4. NFT 마켓
+<img src="https://github.com/user-attachments/assets/19b5fce0-998a-478f-aab3-ded35ed9a8c1" width="230px">
+<img src="https://github.com/user-attachments/assets/f0924444-506e-4d0f-8702-bc7f2b0fb919" width="230px">
+
+- 사용자 간 NFT 게시물을 사고 팔 수 있습니다.
+<br>
   
 
 # 시연 동영상
